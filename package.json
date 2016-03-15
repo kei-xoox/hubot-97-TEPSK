@@ -1,0 +1,24 @@
+{
+  "name": "hubot-97-TEPSK",
+  "version": "1.0.0",
+  "description": "Show 97 Things Every Programmer Should Know in hubot",
+  "dependencies": {
+    "cheerio-httpcli": "^0.6.5",
+    "google-url": "0.0.4"
+  },
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kei-xoox/hubot-97-TEPSK.git"
+  },
+  "keywords": [
+    "hubot",
+    "97 Things Every Programmer Should Know"
+  ],
+  "author": "k-ysd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kei-xoox/hubot-97-TEPSK/issues"
+  },
+  "homepage": "https://github.com/kei-xoox/hubot-97-TEPSK#readme"
+}
