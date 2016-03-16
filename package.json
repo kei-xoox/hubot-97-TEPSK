@@ -1,5 +1,5 @@
 {
-  "name": "hubot-97-TEPSK",
+  "name": "hubot-97-tepsk",
   "version": "1.0.0",
   "description": "Show 97 Things Every Programmer Should Know in hubot",
   "dependencies": {
@@ -9,7 +9,7 @@
   "main": "index.coffee",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kei-xoox/hubot-97-TEPSK.git"
+    "url": "git+https://github.com/kei-xoox/hubot-97-tepsk.git"
   },
   "keywords": [
     "hubot",
@@ -18,7 +18,7 @@
   "author": "k-ysd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kei-xoox/hubot-97-TEPSK/issues"
+    "url": "https://github.com/kei-xoox/hubot-97-tepsk/issues"
   },
-  "homepage": "https://github.com/kei-xoox/hubot-97-TEPSK#readme"
+  "homepage": "https://github.com/kei-xoox/hubot-97-tepsk#readme"
 }
