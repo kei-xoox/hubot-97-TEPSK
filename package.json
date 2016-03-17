@@ -1,6 +1,6 @@
 {
   "name": "hubot-97-tepsk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Show 97 Things Every Programmer Should Know in hubot",
   "dependencies": {
     "cheerio-httpcli": "^0.6.5",

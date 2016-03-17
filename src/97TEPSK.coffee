@@ -9,7 +9,7 @@
 #   HUBOT_GOOGLE_CSE_KEY
 #
 # Commands:
-#   None
+#   hubot 97 -  Displays a random message from https://ja.m.wikisource.org/wiki/プログラマが知るべき97のこと
 #
 # Author:
 #  k-ysd
