@@ -6,6 +6,12 @@ Post random essay from ["プログラマが知るべき97のこと"](https://ja.
 
 ![slack.png](images/slack.png)
 
+# Usage
+
+```
+@bot 97
+```
+
 # Installation
 
 In your hubot directory:
@@ -26,4 +32,3 @@ Add hubot-97-tepsk to external-scripts.json.
 # Configuration
 * HUBOT_GOOGLE_CSE_KEY
 see [Custom Search Engine](https://github.com/hubot-scripts/hubot-google-images/blob/master/README.md#custom-search-engine)
-
