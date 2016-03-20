@@ -1,5 +1,5 @@
 # hubot-97-tepsk
-[![npm-version][npm-badge]][npm]
+[![npm version](https://badge.fury.io/js/hubot-97-tepsk.svg)](https://badge.fury.io/js/hubot-97-tepsk)
 
 Show "97 Things Every Programmer Should Know" in hubot
 
