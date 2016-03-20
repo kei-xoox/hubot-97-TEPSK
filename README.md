@@ -1,4 +1,6 @@
 # hubot-97-tepsk
+[![npm-version][npm-badge]][npm]
+
 Show "97 Things Every Programmer Should Know" in hubot
 
 # Description
