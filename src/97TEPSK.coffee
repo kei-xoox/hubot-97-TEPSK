@@ -3,7 +3,7 @@
 #   https://ja.m.wikisource.org/wiki/プログラマが知るべき97のこと
 #
 # Dependencies:
-#   none
+#   cheerio-httpcli, google-url
 #
 # Configuration:
 #   HUBOT_GOOGLE_CSE_KEY
@@ -12,7 +12,7 @@
 #   hubot 97 -  Displays a random message from https://ja.m.wikisource.org/wiki/プログラマが知るべき97のこと
 #
 # Author:
-#  k-ysd
+#  k-ysd <kysd24@gmail.com>
 
 client = require 'cheerio-httpcli'
 googleUrl = require "google-url"
@@ -23,20 +23,29 @@ googleUrl = new googleUrl({key: process.env.HUBOT_GOOGLE_CSE_KEY})
 
 getMessage = (msg) ->
   client.fetch urlBasic, {q:'node.js'}, (err, $, res) ->
-    li = $('#mw-content-text > div > div > ol:nth-child(3) > li:nth-child(1)')
+    li = $("#mw-content-text > div > ol:nth-child(3) > li:nth-child(1)")
     i = Math.random() * 97 | 0
+
+    unless li?
+      return
 
     if i != 0
       for j in [0..i]
         li = li.next()
 
-    googleUrl.shorten "http://ja.m.wikisource.org" +
-      li.contents().attr('href'), (err, shortUrl) ->
-        msg.reply li.text() + "\n" + shortUrl
+    # deadlink
+    if li.contents().attr('href').indexOf("redlink") is -1
+      li = li.next()
 
-getShortURL = (url) ->
-  googleUrl = new googleUrl({key: process.env.HUBOT_GOOGLE_CSE_KEY})
+    url = "http://ja.m.wikisource.org" +
+      li.contents().attr('href')
+    title = li.contents().attr('title')
 
+    if process.env.HUBOT_GOOGLE_CSE_KEY?
+      googleUrl.shorten url, (err, shortUrl) ->
+        msg.reply title + "\n" + shortUrl
+    else
+      msg.reply title + "\n" + url
 
 module.exports = (robot) ->
   robot.respond /97/, (msg) ->

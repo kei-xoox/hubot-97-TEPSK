@@ -32,5 +32,5 @@ Add hubot-97-tepsk to external-scripts.json.
 ```
 
 # Configuration
-* HUBOT_GOOGLE_CSE_KEY
-see [Custom Search Engine](https://github.com/hubot-scripts/hubot-google-images/blob/master/README.md#custom-search-engine)
+* HUBOT_GOOGLE_CSE_KEY :
+see [Custom Search Engine](https://github.com/hubot-scripts/hubot-google-images/blob/master/README.md#custom-search-engine) and enable "URL Shortener API"
